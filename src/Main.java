@@ -61,7 +61,7 @@ public class Main {
         empleado.setCargo(scanner.nextLine());
         System.out.println("Ingresa el salario:");
         empleado.setSalario(scanner.nextDouble());
-        System.out.println("Desea calcular el salrio con descuento de IVA [S/N]: ");
+        System.out.println("Desea agregar decuento de ISSS [S/N]: ");
         calcularSalario = scanner.next();
 
         // verificar si desdea calcular el salario con descuento de IVA
@@ -117,7 +117,7 @@ public class Main {
         tipoSeleccion = tipoSeleccion.toUpperCase();
 
         if(tipoSeleccion.equals("S")){
-            return empleado.carcularSalarioIVA(empleado.getSalario());
+            return empleado.descuentoISSS(empleado.getSalario());
         }else{
             return empleado.getSalario();
         }

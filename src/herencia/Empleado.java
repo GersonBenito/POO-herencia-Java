@@ -43,9 +43,9 @@ public class Empleado extends Persona{
         System.out.println("Salario neto: " + salarioCalculado);
     }
 
-    public double carcularSalarioIVA(double salario){
-        final double IVA = 13; // El IVA equivale al 13%
-        double descuento = salario * (IVA / 100);
+    public double descuentoISSS(double salario){
+        final double ISSS = 7.5; // El valor del ISSS equivale el 7.5%
+        double descuento = salario * (ISSS / 100);
         return salario - descuento;
     }
 
